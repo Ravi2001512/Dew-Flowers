@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dew Flower Shop</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<style>
+    body{
+        font-family: poppins, sans-serif;
+    }
+
+    .glass{
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+    }
+</style>
+</head>
+
+<body class="bg-[#fff8f8] text-gray-800">
+   <header class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <h1 class="text-3xl  font-bold text-pink-600">
+            Dew Flowers
+        </h1>
+
+        <nav class="hidden md:flex gap-8 font-medium">
+            <a href="#" class="hover:text-pink-500 transition">Home</a>
+            <a href="#" class="hover:text-pink-500 transition">Shop</a>
+            <a href="#" class="hover:text-pink-500 transition">Collection</a>
+            <a href="#" class="hover:text-pink-500 transition">Blog</a>
+            <a href="#" class="hover:text-pink-500 transition">About</a>
+            <a href="#" class="hover:text-pink-500 transition">Contact</a>
+        </nav>
+
+         <!-- Right Side -->
+        <div class="flex items-center gap-5">
+
+            <!-- Profile Icon -->
+            <button class="relative hover:scale-110 transition">
+
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                     fill="none" 
+                     viewBox="0 0 24 24" 
+                     stroke-width="1.8" 
+                     stroke="currentColor" 
+                     class="w-7 h-7 text-gray-700 hover:text-pink-500">
+
+                    <path stroke-linecap="round" 
+                          stroke-linejoin="round" 
+                          d="M15.75 6.75a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                </svg>
+
+            </button>
+
+            <!-- Cart Icon -->
+            <button class="relative hover:scale-110 transition">
+
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                     fill="none" 
+                     viewBox="0 0 24 24" 
+                     stroke-width="1.8" 
+                     stroke="currentColor" 
+                     class="w-7 h-7 text-gray-700 hover:text-pink-500">
+
+                    <path stroke-linecap="round" 
+                          stroke-linejoin="round" 
+                          d="M2.25 3h1.386a1.5 1.5 0 011.415 1.026L5.76 6.75m0 0h12.99m-12.99 0L7.5 14.25m11.25-7.5l-1.5 7.5H7.5m0 0a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm9 0a1.5 1.5 0 100 3 1.5 1.5 0 000-3z" />
+                </svg>
+
+                <!-- Cart Count -->
+                <span class="absolute -top-2 -right-2 bg-pink-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                    2
+                </span>
+
+            </button>
+
+        <button class="bg-gradient-to-r from-pink-500 to-rose-500 text-white px-5 py-2 rounded-full shadow-lg hover:scale-105 transition">
+            Shop Now
+        </button>
+
+    </div>
+   </header>
+
+   <!--Hero Section-->
+   <section class="min-h-screen flex items-center bg-gradient-to-r from-pink-50 to-rose-100 pt-24">
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+    <!--Left side-->
+      <div>
+
+        <span class="bg-pink-100 text-pink-600 px-4 py-2 rounded-full text-sm font-semibold">
+          🌸 Fresh Flower Collection 2026
+        </span>
+
+        <h2 class="text-6xl font-bold leading-tight mt-6">
+          Make Every <span class="text-pink-500">Moment</span> Beautiful
+        </h2>
+
+        <p>
+            Luxury flowers crafted with love.
+            perfect gift for birthdays,  weddings, and special memories. Experience the beauty of nature with our exquisite floral arrangements, designed to brighten your day and create unforgettable moments.
+        </p>
+        <div class="flex gap-4 mt-8">
+
+          <button class="bg-gradient-to-r from-pink-500 to-rose-500 text-white px-8 py-4 rounded-full shadow-xl hover:scale-105 transition">
+            Explore Now
+          </button>
+
+          <button class="border-2 border-pink-500 text-pink-500 px-8 py-4 rounded-full hover:bg-pink-500 hover:text-white transition">
+            Learn More
+          </button>
+
+        </div>
+        </div>
+
+        <!--Right side-->
+        <div class="relative">
+            <img src="https://i.pinimg.com/736x/8b/1e/ff/8b1effb528b2061b92ec2ee563e7c704.jpg"
+             class="w-auto h-auto rounded-[20px] shadow-2xl relative z-10 hover:scale-105 transition duration-500"/>
+        </div>
+    </div>
+
+    </section>
+
+    <!--features section-->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6  grid md:grid-cols-4 gap-8">
+
+            <div class="glass rounded-3xl p-8 shadow-lg hover:-translate-y-2 transition text-center">
+                <div class="text-4xl mb-4">🚚</div>
+                <h3 class="text-xl font-semibold mb-2">Free Delivery</h3>
+                <p class="text-gray-600">Enjoy free delivery on all orders, bringing beauty right to your doorstep.</p>
+            </div>
+
+            <div class="glass rounded-3xl p-8 shadow-lg hover:-translate-y-2 transition text-center">
+                <div class="text-5xl mb-4">💐</div>
+                <h3 class="font-bold text-xl">Fresh Flowers</h3>
+                <p class="text-gray-600 mt-2">Premium fresh flower collections.</p>
+            </div>
+
+            <div class="glass rounded-3xl p-8 shadow-lg hover:-translate-y-2 transition text-center">
+                <div class="text-5xl mb-4">💳</div>
+                <h3 class="font-bold text-xl">Secure Payment</h3>
+                <p class="text-gray-600 mt-2">100% safe online payment system.</p>
+            </div>
+
+            <div class="glass rounded-3xl p-8 shadow-lg hover:-translate-y-2 transition text-center">
+               <div class="text-5xl mb-4">❤️</div>
+               <h3 class="font-bold text-xl">Made With Love</h3>
+               <p class="text-gray-600 mt-2">Handcrafted floral arrangements.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    </div>
+    </section>
+
+    <!-- Products -->
+  <section class="py-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-14">
+        <h2 class="text-5xl font-bold">
+          Trending Flowers
+        </h2>
+
+        <p class="text-gray-500 mt-4">
+          Beautiful collections for your loved ones
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- Card1 -->
+        <div class="bg-white rounded-[30px] overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-3 transition duration-300">
+
+          <div class="overflow-hidden">
+            <img 
+              src="https://tse2.mm.bing.net/th/id/OIP.MLgeUhiQ-8Z6_pJwE1lKcwHaJ4?rs=1&pid=ImgDetMain&o=7&rm=3"
+              class="h-72 w-full object-cover hover:scale-110 transition duration-500"
+            />
+          </div>
+
+          <div class="p-6">
+
+            <h3 class="text-xl font-semibold">
+              Pink Roses
+            </h3>
+
+            <div class="flex justify-between items-center mt-4">
+
+              <span class="text-pink-500 text-2xl font-bold">
+                Rs. 1500
+              </span>
+
+              <button class="bg-pink-500 text-white px-4 py-2 rounded-full hover:bg-pink-600">
+                Buy
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card2 -->
+        <div class="bg-white rounded-[30px] overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-3 transition duration-300">
+
+          <div class="overflow-hidden">
+            <img 
+              src="https://i.pinimg.com/1200x/03/b7/f2/03b7f21428cf105908c48d0f8ac83629.jpg"
+              class="h-72 w-full object-cover hover:scale-110 transition duration-500"
+            />
+          </div>
+
+          <div class="p-6">
+
+            <h3 class="text-xl font-semibold">
+              Teddy bear 
+            </h3>
+
+            <div class="flex justify-between items-center mt-4">
+
+              <span class="text-pink-500 text-2xl font-bold">
+                Rs. 2000
+              </span>
+
+              <button class="bg-pink-500 text-white px-4 py-2 rounded-full hover:bg-pink-600">
+                Buy
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card3 -->
+        <div class="bg-white rounded-[30px] overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-3 transition duration-300">
+
+          <div class="overflow-hidden">
+            <img 
+              src="https://i.pinimg.com/control1/1200x/ba/c5/71/bac5715887e4fd06c27626b852075fcc.jpg"
+              class="h-72 w-full object-cover hover:scale-110 transition duration-500"
+            />
+          </div>
+
+          <div class="p-6">
+
+            <h3 class="text-xl font-semibold">
+                Purple
+            </h3>
+
+            <div class="flex justify-between items-center mt-4">
+
+              <span class="text-pink-500 text-2xl font-bold">
+                Rs. 1500
+              </span>
+
+              <button class="bg-pink-500 text-white px-4 py-2 rounded-full hover:bg-pink-600">
+                Buy
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card3 -->
+        <div class="bg-white rounded-[30px] overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-3 transition duration-300">
+
+          <div class="overflow-hidden">
+            <img 
+              src="https://i.pinimg.com/736x/d5/3a/50/d53a50d34fae063d0850a5ce87edcf06.jpg"
+              class="h-72 w-full object-cover hover:scale-110 transition duration-500"
+            />
+          </div>
+
+          <div class="p-6">
+
+            <h3 class="text-xl font-semibold">
+                Wedding
+            </h3>
+
+            <div class="flex justify-between items-center mt-4">
+
+              <span class="text-pink-500 text-2xl font-bold">
+                Rs. 2500
+              </span>
+
+              <button class="bg-pink-500 text-white px-4 py-2 rounded-full hover:bg-pink-600">
+                Buy
+              </button>
+            </div>
+          </div>
+        </div>
+    </section>
+
+        <!-- CTA -->
+      <section class="py-24">
+
+      <div class="max-w-6xl mx-auto px-6">
+
+      <div class="bg-gradient-to-r from-pink-500 to-rose-500 rounded-[40px] p-16 text-white text-center shadow-2xl">
+
+        <h2 class="text-5xl font-bold">
+          Send Love With Flowers 🌹
+        </h2>
+
+        <p class="mt-6 text-lg text-pink-100">
+          Beautiful flowers delivered to your loved ones instantly.
+        </p>
+
+        <button class="mt-8 bg-white text-pink-500 px-8 py-4 rounded-full font-semibold hover:scale-105 transition">
+          Order Now
+        </button>
+      </div>
+      </div>
+    </section>
+
+    <!-- Feedback Section -->
+<section class="py-24 bg-gradient-to-r from-pink-50 to-rose-100">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Title -->
+    <div class="text-center mb-16">
+
+      <h2 class="text-5xl font-bold">
+        What Our Customers Say 💖
+      </h2>
+
+      <p class="text-gray-500 mt-4">
+        Loved by hundreds of happy customers
+      </p>
+
+    </div>
+
+    <!-- Feedback Cards -->
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+      <div class="bg-white p-8 rounded-[30px] shadow-lg hover:-translate-y-2 transition">
+
+        <div class="flex items-center gap-4 mb-6">
+
+          <img 
+            src="https://i.pinimg.com/736x/b0/0a/35/b00a3541c1e0acd7ba2702549ccc8edb.jpg"
+            class="w-16 h-16 rounded-full object-cover"/>
+
+          <div>
+            <h3 class="font-bold text-lg">
+              Janani Dewmini
+            </h3>
+
+            <p class="text-gray-500 text-sm">
+              Happy Customer
+            </p>
+          </div>
+
+        </div>
+
+        <div class="text-yellow-400 text-xl mb-4">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <p class="text-gray-600 leading-relaxed">
+          The flowers were absolutely beautiful and fresh. 
+          Delivery was super fast and the bouquet looked amazing.
+        </p>
+
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white p-8 rounded-[30px] shadow-lg hover:-translate-y-2 transition">
+
+        <div class="flex items-center gap-4 mb-6">
+
+          <img 
+            src="https://i.pinimg.com/736x/3d/d5/62/3dd562a7a82e26908779a8f05ecd92fa.jpg"
+            class="w-16 h-16 rounded-full object-cover"/>
+
+          <div>
+            <h3 class="font-bold text-lg">
+              Ravindu Deshan
+            </h3>
+
+            <p class="text-gray-500 text-sm">
+              Wedding Customer
+            </p>
+          </div>
+
+        </div>
+
+        <div class="text-yellow-400 text-xl mb-4">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <p class="text-gray-600 leading-relaxed">
+          Perfect wedding flower decorations. 
+          Everyone loved the elegant flower designs.
+        </p>
+
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white p-8 rounded-[30px] shadow-lg hover:-translate-y-2 transition">
+
+        <div class="flex items-center gap-4 mb-6">
+
+          <img 
+            src="https://i.pinimg.com/736x/ce/c5/f7/cec5f7bd702947c4dcaa7c219aa53189.jpg"
+            class="w-16 h-16 rounded-full object-cover"/>
+
+          <div>
+            <h3 class="font-bold text-lg">
+              Chanu Hasintha
+            </h3>
+
+            <p class="text-gray-500 text-sm">
+              Loyal Customer
+            </p>
+          </div>
+
+        </div>
+
+        <div class="text-yellow-400 text-xl mb-4">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <p class="text-gray-600 leading-relaxed">
+          Dew Flowers always gives the best quality flowers. 
+          Their customer service is excellent.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-16">
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+
+      <div>
+        <h2 class="text-3xl font-bold text-pink-400">
+          Dew Flowers
+        </h2>
+
+        <p class="text-gray-400 mt-4">
+          Luxury flower collections for every special moment.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+
+        <ul class="space-y-3 text-gray-400">
+          <li><a href="#" class="hover:text-white">Home</a></li>
+          <li><a href="#" class="hover:text-white">Shop</a></li>
+          <li><a href="#" class="hover:text-white">Collection</a></li>
+          <li><a href="#" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-lg mb-4">Support</h3>
+
+        <ul class="space-y-3 text-gray-400">
+          <li><a href="#" class="hover:text-white">Help Center</a></li>
+          <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-white">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-lg mb-4">
+          Newsletter
+        </h3>
+
+        <input 
+          type="email"
+          placeholder="Enter your email"
+          class="w-full px-5 py-4 rounded-2xl text-black outline-none"
+        />
+
+        <button class="w-full mt-4 bg-gradient-to-r from-pink-500 to-rose-500 py-4 rounded-2xl font-semibold hover:opacity-90">
+          Subscribe
+        </button>
+      </div>
+
+    </div>
+
+    <div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-500">
+      © 2026. All rights reserved.
+    </div>
+
+  </footer>
+</body>
+</html>
